@@ -1,0 +1,23 @@
+{
+  "name": "padnews-cli",
+  "version": "0.0.1",
+  "description": "cli client for padnews",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:caasi/padnews-cli.git"
+  },
+  "keywords": [
+    "hackpad",
+    "padnews"
+  ],
+  "author": "caasi Huang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caasi/padnews-cli/issues"
+  },
+  "homepage": "https://github.com/caasi/padnews-cli"
+}
