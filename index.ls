@@ -1,7 +1,7 @@
 require! colors
 Padnews = require 'padnews'
 
-new Padnews(\sgyfCRGiBZC).run do
+new Padnews(\sgyfCRGiBZC \g0v).run do
   5000
   (event, msg) ->
     prefix = if event is \update then '更新 '.yellow else ''

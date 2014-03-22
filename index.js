@@ -2,7 +2,7 @@
 var colors, Padnews;
 colors = require('colors');
 Padnews = require('padnews');
-new Padnews('sgyfCRGiBZC').run(5000, function(event, msg){
+new Padnews('sgyfCRGiBZC', 'g0v').run(5000, function(event, msg){
   var prefix, i$, ref$, len$, p, results$ = [];
   prefix = event === 'update' ? '更新 '.yellow : '';
   console.log(((prefix + "" + msg.time.magenta + " ") + ("[" + (msg.location || '？？') + "]").green).bold);
