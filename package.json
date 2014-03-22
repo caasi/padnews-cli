@@ -4,6 +4,7 @@
   "description": "cli client for padnews",
   "main": "index.js",
   "scripts": {
+    "start": "node ./index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/caasi/padnews-cli/issues"
   },
-  "homepage": "https://github.com/caasi/padnews-cli"
+  "homepage": "https://github.com/caasi/padnews-cli",
+  "dependencies": {
+    "padnews": "git://github.com/caasi/padnews",
+    "colors": "^0.6.2"
+  }
 }
