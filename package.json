@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/caasi/padnews-cli",
   "dependencies": {
-    "padnews": "git://github.com/caasi/padnews",
+    "padnews": "git://github.com/g0v/padnews",
     "colors": "^0.6.2"
   }
 }
