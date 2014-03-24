@@ -3,12 +3,22 @@ var colors, Padnews;
 colors = require('colors');
 Padnews = require('padnews');
 new Padnews('sgyfCRGiBZC', 'g0v').run(5000, function(event, msg){
-  var prefix, i$, ref$, len$, p, results$ = [];
-  prefix = event === 'update' ? '更新 '.yellow : '';
-  console.log(((prefix + "" + msg.time.magenta + " ") + ("[" + (msg.location || '？？') + "]").green).bold);
-  for (i$ = 0, len$ = (ref$ = msg.content).length; i$ < len$; ++i$) {
-    p = ref$[i$];
-    results$.push(console.log(p + "\n"));
+  var out, i$, ref$, len$;
+  out = function(event, msg){
+    var prefix, i$, ref$, len$, p;
+    prefix = event === 'update' ? '更新 '.yellow : '';
+    console.log(((prefix + "" + msg.time.magenta + " ") + ("[" + (msg.location || '？？') + "]").green).bold);
+    for (i$ = 0, len$ = (ref$ = msg.content).length; i$ < len$; ++i$) {
+      p = ref$[i$];
+      console.log(p + "\n");
+    }
+  };
+  if (event === 'ready') {
+    for (i$ = 0, len$ = (ref$ = this.news).length; i$ < len$; ++i$) {
+      msg = ref$[i$];
+      out(event, msg);
+    }
+  } else {
+    out(event, msg);
   }
-  return results$;
 });
