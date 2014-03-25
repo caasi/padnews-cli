@@ -2,7 +2,7 @@
 var colors, Padnews;
 colors = require('colors');
 Padnews = require('padnews');
-new Padnews('sgyfCRGiBZC', 'g0v').run(5000, function(event, msg){
+new Padnews('FRzDUBto4Vj').run(5000, function(event, msg){
   var out, i$, ref$, len$;
   out = function(event, msg){
     var prefix, i$, ref$, len$, p;

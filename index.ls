@@ -1,7 +1,7 @@
 require! colors
 Padnews = require 'padnews'
 
-new Padnews(\sgyfCRGiBZC \g0v).run do
+new Padnews(\FRzDUBto4Vj).run do
   5000
   (event, msg) !->
     out = (event, msg) !->
