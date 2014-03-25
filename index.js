@@ -6,7 +6,9 @@ new Padnews('sgyfCRGiBZC', 'g0v').run(5000, function(event, msg){
   var out, i$, ref$, len$;
   out = function(event, msg){
     var prefix, i$, ref$, len$, p;
-    prefix = event === 'update' ? '更新 '.yellow : '';
+    prefix = event === 'update'
+      ? '更新 '.yellow
+      : event === 'remove' ? '移除 '.red : '';
     console.log(((prefix + "" + msg.time.magenta + " ") + ("[" + (msg.location || '？？') + "]").green).bold);
     for (i$ = 0, len$ = (ref$ = msg.content).length; i$ < len$; ++i$) {
       p = ref$[i$];
