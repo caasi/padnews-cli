@@ -1,6 +1,6 @@
 {
   "name": "padnews-cli",
-  "version": "0.1.6",
+  "version": "0.1.9",
   "description": "A cli client for padnews.",
   "main": "index.js",
   "scripts": {

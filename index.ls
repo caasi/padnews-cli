@@ -1,9 +1,8 @@
 require! colors
 Padnews = require 'padnews'
 
-new Padnews(\FRzDUBto4Vj).run do
-  5000
-  (event, msg) !->
+new Padnews(\FRzDUBto4Vj)
+  ..on-msg = (event, msg) !->
     out = (event, msg) !->
       prefix = if event is \update
         '更新 '.yellow
@@ -19,3 +18,4 @@ new Padnews(\FRzDUBto4Vj).run do
         out event, msg
     else
       out event, msg
+  ..run!
